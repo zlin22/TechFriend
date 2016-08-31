@@ -183,3 +183,7 @@ body{
 header, #jumbotron-container {
     border-bottom: 1px #29aae1 solid;   
 }
+
+address {
+    font-size: 100%
+}
