@@ -161,22 +161,33 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
-                    <li class="dropdown active">
+                    <li  class="active" class="dropdown">
                         <a href="ourservices.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                          Our Services <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <!--                            <li class="dropdown-header">Remote Services</li>-->
-                            <li><a href="ourservices.html">Advice</a></li>
+                            <li><a href="ourservices.html">Recommendation</a></li>
                             <li><a href="ourservices.html#setup">Setup & Delivery</a></li>
-                            <!--                            <li><a href="#">Cell Phone Plan Advice</a></li>-->
                             <!--                            <li role="separator" class="divider"></li>-->
                             <!--                            <li class="dropdown-header">In-Person Services</li>-->
-                            <!--                            <li><a href="ourservices.html#deviceSetup">Device Setup & Hand Delivery</a></li>-->
                             <li><a href="ourservices.html#tutorial">Tutorial</a></li>
                             <li><a href="ourservices.html#troubleshooting">Troubleshooting</a></li>
                         </ul>
                     </li>
-                    <!--                    <li><a href="contactus.html">Contact Us</a></li>-->
+                    <form class="navbar-form navbar-left">
+                        <button id="callToAction" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Get Started<span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <!-- BEGIN OLARK CHAT LINK -->
+                            <li><a id="callToActionDropdown" href="javascript:void(0);" onclick="olark('api.box.expand')">
+                                Live Chat
+                            </a></li>
+                            <!-- END OLARK CHAT LINK -->
+                            <li><a id="callToActionDropdown" href="tel: +16462333425">Call</a></li>
+                            <li><a id="callToActionDropdown" href="mailto: contact@techfriend.us">Email</a></li>
+                        </ul>
+                    </form>
+
                 </ul>
             </div>
         </div>
@@ -194,9 +205,8 @@
 
     <div class="container">
 
-        <br><br>
-
-        <h2><strong>Purchasing Advice</strong></h2>
+        <div id="advice"></div><br><br>
+        <h2><strong>Personalized Recommendation</strong></h2>
         <div class="collapse in" id="adviceContent">
             <h4>Buying right device is about making the right trade-offs. The best device for someone else might not be the best device for you. <a class="blueLink" href="images/TechFriendPersonalizedDeviceRecommendation_Example.pdf">Here’s an example of the advice we provide.</a></h4>
             <h4>When buying new devices, most people usually do one of three things. Click to learn more on why TechFriend is better:
@@ -224,9 +234,6 @@
                     </a>
                     <div class="collapse" id="internet">
                         <div class="well">
-                            <p>
-                                Usually, when people look on the internet for a device such as a smartphone, they begin by searching "what is the best smart phone". The problem is that "the best smartphone" doesn't exist. Different people have different needs. In order to make a deeply informed decision of what smartphone to buy, the average consumer would need to understand the entire smartphone market, and what all the specs mean in real life (for example, what's the difference between a 400 ppi screen vs. a 500 ppi screen?).
-                            </p>
                             <p>
                                 Most of the information needed to purchase a device can be found on the internet. But finding the perfect device for you requires hours, days or weeks reading tech blogs (we do this for a living!).
                             </p>
@@ -354,7 +361,7 @@
         </h4>
         <h4>Our flat fee of $99 per hour covers the time we spend in-person helping you. If you’re not satisfied, we won’t charge you.</h4>
         <hr>
-        
+
         <div id="troubleshooting"></div><br><br>
         <h2 id="troubleshooting"><strong>Troubleshooting</strong></h2>
         <h3>Have a phone, computer, WiFi, TV, printer or other device that isn’t working properly? TechFriend offers same or next day troubleshooting support.</h3>
@@ -362,7 +369,7 @@
         <h4>Enjoy expert tech support in the comfort of your own home or office, on your schedule. Our experts bring a depth of technical knowledge directly to you! Our flat fee of $99 per hour covers the time we spend in-person helping you. If you’re not satisfied, we won’t charge you.</h4>
     </div>
     <br><br><br>
-    
+
     <footer>
         <div class="container">
             <div class="row row-footer">

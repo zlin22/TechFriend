@@ -100,6 +100,13 @@ a.blueLink {
         //            margin: auto;
         //        }
     }
+    button {
+        margin-left: 49%;
+    }
+    
+    ul {
+        margin-left: 49%;
+    }
 }
 
 #jumbotron-text {
@@ -111,6 +118,25 @@ a.blueLink {
     padding-top: 380px;
     color: white;
     font-size: 5em;
+}
+
+#callToAction {
+    background-color: $friendPurple;
+    color: white;
+    &:hover,
+    .active {
+        background-color: $friendPurple;
+        color: white;
+    }
+}
+
+#callToActionDropdown {
+    background-color: white;
+    color: $friendPurple;
+    &:hover {
+        background-color: $friendPurple;
+        color: white;
+    }
 }
 
 header {
@@ -137,14 +163,15 @@ header {
     }
 }
 
-span.glyphicon, i.fa {
+span.glyphicon,
+i.fa {
     color: $techBlue;
 }
 
-i.fa.fa-facebook, i.fa.fa-twitter {
+i.fa.fa-facebook,
+i.fa.fa-twitter {
     color: white;
 }
-
 
 hr {
     border: none;
