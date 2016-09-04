@@ -1,4 +1,5 @@
-$fontFamily: 'Open Sans', sans-serif;
+$fontFamily: 'Open Sans',
+sans-serif;
 $techBlue: #29aae1;
 $friendPurple: #7300EF;
 * {
@@ -99,7 +100,6 @@ a.blueLink {
         //            margin: auto;
         //        }
     }
-
 }
 
 #jumbotron-text {
@@ -182,23 +182,24 @@ body {
     padding: 0;
 }
 
-.row-footer {
-    margin: 0px auto;
-    padding: 20px 0px 0px 0px;
-//    border: 1px $techBlue solid;
+footer {
     background-color: $friendPurple;
-    color: white;
-    font-size: 1.2em;
-    
-    address {
+    .row-footer {
+        margin: 0px;
+        padding: 20px 0px 0px 0px;
+        //    border: 1px $techBlue solid;
+        //    background-color: $friendPurple;
         color: white;
-        a{
+        font-size: 1.2em;
+        address {
+            color: white;
+            a {
+                color: white;
+            }
+        }
+        li a {
             color: white;
         }
-    }
-    
-    li a {
-        color: white;
     }
 }
 

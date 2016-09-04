@@ -164,20 +164,22 @@ body {
   padding: 0;
 }
 
-.row-footer {
-  margin: 0px auto;
-  padding: 20px 0px 0px 0px;
+footer {
   background-color: #7300EF;
+}
+footer .row-footer {
+  margin: 0px;
+  padding: 20px 0px 0px 0px;
   color: white;
   font-size: 1.2em;
 }
-.row-footer address {
+footer .row-footer address {
   color: white;
 }
-.row-footer address a {
+footer .row-footer address a {
   color: white;
 }
-.row-footer li a {
+footer .row-footer li a {
   color: white;
 }
 
