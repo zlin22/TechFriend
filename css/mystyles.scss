@@ -6,7 +6,7 @@ $friendPurple: #7300EF;
 }
 
 a.blueLink {
-    color: $friendPurple;
+    color: $techBlue;
 }
 
 .navbar-default {
@@ -16,7 +16,7 @@ a.blueLink {
     .navbar-nav {
         > {
             li> a {
-                color: $friendPurple;
+                color: black;
                 background: #ffffff;
                 font-weight: 600;
                 &:hover,
@@ -126,7 +126,7 @@ header {
 
 .box-header {
     font-weight: bold;
-    color: $friendPurple;
+    color: black;
 }
 
 .homepageBoxes {
@@ -185,7 +185,21 @@ body {
 .row-footer {
     margin: 0px auto;
     padding: 20px 0px 0px 0px;
-    border: 1px $techBlue solid;
+//    border: 1px $techBlue solid;
+    background-color: $friendPurple;
+    color: white;
+    font-size: 1.2em;
+    
+    address {
+        color: white;
+        a{
+            color: white;
+        }
+    }
+    
+    li a {
+        color: white;
+    }
 }
 
 @media (min-width: 768px) {

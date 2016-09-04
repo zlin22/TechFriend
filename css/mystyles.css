@@ -3,7 +3,7 @@
 }
 
 a.blueLink {
-  color: #7300EF;
+  color: #29aae1;
 }
 
 .navbar-default {
@@ -12,7 +12,7 @@ a.blueLink {
   border-bottom: 1px solid #29aae1;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #7300EF;
+  color: black;
   background: #ffffff;
   font-weight: 600;
 }
@@ -108,7 +108,7 @@ header {
 
 .box-header {
   font-weight: bold;
-  color: #7300EF;
+  color: black;
 }
 
 .homepageBoxes {
@@ -167,7 +167,18 @@ body {
 .row-footer {
   margin: 0px auto;
   padding: 20px 0px 0px 0px;
-  border: 1px #29aae1 solid;
+  background-color: #7300EF;
+  color: white;
+  font-size: 1.2em;
+}
+.row-footer address {
+  color: white;
+}
+.row-footer address a {
+  color: white;
+}
+.row-footer li a {
+  color: white;
 }
 
 @media (min-width: 768px) {
