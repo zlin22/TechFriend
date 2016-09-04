@@ -20,7 +20,7 @@
     <![endif]-->
     <link rel="icon" href="favicon.ico">
     <link href="css/mystyles.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
 
     <!-- /snippets/social-meta-tags.liquid -->
 
@@ -184,15 +184,15 @@
         <!-- Main component for a primary marketing message or call to action -->
 
         <div id="jumbotron-container" class="container-fluid">
-            <img src="images/jumbotron-xs.jpg" alt="ctrl-lego" class="img-responsive visible-xs">
-            <img src="images/jumbotron-sm.jpg" alt="ctrl-lego" class="img-responsive hidden-xs">
+            <img src="images/jumbotron-xs.jpg" alt="ctrl-lego" class="img-responsive visible-xs-block">
+            <!--            <img src="images/jumbotron-sm.jpg" alt="ctrl-lego" class="img-responsive hidden-xs">-->
+            <h1 id="jumbotron-text" class="hidden-xs"><strong>Take Control Of Your Tech Life!</strong></h1>
         </div>
 
         <div class="container">
             <div class="row row-header">
                 <div class="col-xs-12">
-                    <h1 class="text-center" id="jumbotron-text">Take Control of Your Tech Life!</h1>
-                    <!--                    <p class="text-center">We recommend the ideal device for you and set them up.</p>-->
+                    <h1 class="text-center visible-xs-block" id="jumbotron-text-xs">Take Control of Your Tech Life!</h1>
                 </div>
                 <div>
                 </div>
@@ -200,7 +200,7 @@
         </div>
     </header>
 
-    <div class="container">
+    <section class="container">
         <!--
         <div>
             <ol class="breadcrumb">
@@ -211,40 +211,49 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <h2 class="text-center section-header">WHAT WE DO</h2>
+                <h2 class="text-center section-header">What We Do</h2>
                 <hr>
             </div>
-            <div class="col-xs-12 col-sm-6">
-                <i class="fa fa-thumbs-o-up fa-3x"></i>
-                <h3 id="box-header" class="text-Left">Advice</h3>
-                <p>We offer personalized, unbiased advice for your purchases. 15 minutes with our experts is all it takes to figure out the idea smartphone, tablet, laptop, TV for you! Best of all, it's <strong>completely free.</strong></p>
-                <!--                <p>Contrary to what manufacturers like to say in their marketing, there is no "best device" for everyone; there is only the ideal device for you. Choosing that device is about making the right trade-offs. With so many options out there, this can get really challenging. <strong>15 minutes on the phone with one of our experts is all it takes to figure out the ideal device for you!</strong> We will recommend the best device for you based on your personal usage and preferences. Best of all, it's <strong>completely free.</strong></p>-->
-                <!--                <p>If you prefers to see and hold the device, we will bring up to 5 devices to you for you to try, and show you all the features for a flat $99 per visit (TVs excluded).</p>-->
-                <p><a href="ourservices.html#advice">Learn More About Our Advice &raquo;</a></p>
-            </div>
 
-            <div class="col-xs-12 col-sm-6">
-                <i class="fa fa-power-off fa-3x"></i>
-                <h3 id="box-header">Setup and Delivery</h3>
-                <p>We set up all your devices for you, and make sure all your hardware, software and services work together seamlessly. Each visit is just $99 (up to 1 hour). <strong>Satisfaction guaranteed - if we can't make it work, we don't charge you!</strong></p>
-                <!--                <p>Tech can get complicated- especially if you have many devices and you want them to work together. That's why we set up all your devices for you and make sure all your hardware, software and services work together seamlessly. Each visit is just $99 (up to 1 hour). <strong>Satisfaction guaranteed - if we can't make it work, we don't charge you!</strong></p>-->
-                <p>As an added bonus with the device setup service, we can also hand-deliver devices for free from a local retailer of your choice.</p>
-                <p><a href="ourservices.html#setup">Learn More About Our Setup and Delivery Process &raquo;</a></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <span class="glyphicon glyphicon-info-sign fa-3x" aria-hidden="true"></span>
-                <h3 id="box-header">Tutorials</h3>
-                <p>Tech can get complicated. We can show you exactly how your device functions, at $99 per visit.</p>
-                <p><a href="ourservices.html#tutorial">Learn More About Our Tutorial Service &raquo;</a></p>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-                <span class="glyphicon glyphicon-wrench fa-3x" aria-hidden="true"></span>
-                <h3 id="box-header">Troubleshooting</h3>
-                <p>If you have any issues with using the device, we can fix it for you, at $99/visit. (Hardware issues excluded, eg. no cracked screens)</p>
-                <p><a href="ourservices.html#troubleshooting">Learn More About Our Troubleshooting Service &raquo;</a></p>
-            </div>
+            <a class="homepageBoxes" href="ourservices.html#advice">
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <span class="glyphicon glyphicon-thumbs-up fa-3x"></span>
+                    <h3 id="box-header" class="text-Left">Purchasing Advice</h3>
+                    <p>Buying the right device is about making the the right trade-offs. In 15 minutes, our experts help find the ideal smartphone, tablet, laptop, TV for you. Best of all, your first consultation is <strong>completely free!</strong></p>
+                    <!--                <p>Contrary to what manufacturers like to say in their marketing, there is no "best device" for everyone; there is only the ideal device for you. Choosing that device is about making the right trade-offs. With so many options out there, this can get really challenging. <strong>15 minutes on the phone with one of our experts is all it takes to figure out the ideal device for you!</strong> We will recommend the best device for you based on your personal usage and preferences. Best of all, it's <strong>completely free.</strong></p>-->
+                    <!--                <p>If you prefers to see and hold the device, we will bring up to 5 devices to you for you to try, and show you all the features for a flat $99 per visit (TVs excluded).</p>-->
+                    <p><a href="ourservices.html#advice">Learn More &raquo;</a></p>
+                </div>
+            </a>
+
+            <a class="homepageBoxes" href="ourservices.html#setup">
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <span class="glyphicon glyphicon-off fa-3x"></span>
+                    <h3 id="box-header">Setup and Delivery</h3>
+                    <p>Setting up devices can be time-consuming. TechFriend offers same or next day hand-delivery and setup. We make sure that your apps, settings, services are all working seamlessly. Each visit is just $99 (up to 1 hour). <strong>Satisfaction guaranteed - if you are not satisfied, we don't charge you!</strong></p>                    <!--                <p>Tech can get complicated- especially if you have many devices and you want them to work together. That's why we set up all your devices for you and make sure all your hardware, software and services work together seamlessly. Each visit is just $99 (up to 1 hour). <strong>Satisfaction guaranteed - if we can't make it work, we don't charge you!</strong></p>-->
+                    <p><a href="ourservices.html#setup">Learn More &raquo;</a></p>
+                </div>
+            </a>
+            <!--        </div>-->
+
+            <!--        <div class="row">-->
+            <a class="homepageBoxes" href="ourservices.html#tutorial">
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <span class="glyphicon glyphicon-info-sign fa-3x" aria-hidden="true"></span>
+                    <h3 id="box-header">Tutorials</h3>
+                    <p>Looking to use your devices to their fullest potential? Want to learn how to back up photos or important files, decipher your TV remotes, video chat with friends and more? Learn how, at $99 per visit (up to 1 hour).</p>
+                    <p><a href="ourservices.html#tutorial">Learn More &raquo;</a></p>
+                </div>
+            </a>
+
+            <a class="homepageBoxes" href="ourservices.html#troubleshooting">
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <span class="glyphicon glyphicon-wrench fa-3x" aria-hidden="true"></span>
+                    <h3 id="box-header">Troubleshooting</h3>
+                    <p>Have a device that isn’t working properly? TechFriend offers in-person troubleshooting at $99 per visit (up to 1 hour). We can fix most issues, but not hardware issues (like cracked screens). Call us for details.</p>
+                    <p><a href="ourservices.html#troubleshooting">Learn More &raquo;</a></p>
+                </div>
+            </a>
         </div>
         <!--
         <div class="row row-learn-more">
@@ -259,7 +268,7 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <h2 class="text-center section-header-spaced">OUR MISSION</h2>
+                <h2 class="text-center section-header-spaced">Our Mission</h2>
                 <hr>
             </div>
             <div class="col-xs-12">
@@ -267,7 +276,7 @@
                 <p><a href="aboutus.html">Learn More About Us &raquo;</a></p>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer>
         <div class="container">
@@ -281,10 +290,10 @@
 		           </address>
                 </div>
                 <div class="col-xs-12 col-sm-4 text-center">
-                        <p>Please Support Us On Social Media!</p>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/TechFriendUs"><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/TechFriendUs"><i class="fa fa-twitter"></i></a>
-                        <!--                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>-->
+                    <p>Please Support Us On Social Media!</p>
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/TechFriendUs"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/TechFriendUs"><i class="fa fa-twitter"></i></a>
+                    <!--                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>-->
                 </div>
                 <div class="col-xs-12 col-sm-4 text-center">
                     <h5>Links</h5>
@@ -302,9 +311,10 @@
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

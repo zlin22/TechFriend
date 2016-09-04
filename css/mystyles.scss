@@ -1,0 +1,204 @@
+$fontFamily: 'Roboto',
+sans-serif;
+$techBlue: #29aae1;
+$friendPurple: #7300EF;
+* {
+    font-family: $fontFamily;
+}
+
+a.blueLink {
+    color: $techBlue;
+}
+
+.navbar-default {
+    background: #ffffff;
+    font-weight: 600;
+    border-bottom: 1px solid $techBlue;
+    .navbar-nav {
+        > {
+            li> a {
+                color: $friendPurple;
+                background: #ffffff;
+                font-weight: 600;
+                &:hover,
+                &:focus {
+                    color: $techBlue;
+                    background: #ffffff;
+                    border-bottom: 3px solid $techBlue;
+                    padding-bottom: 5px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+            }
+            .active> a {
+                color: $techBlue;
+                background: #ffffff;
+                font-weight: 600;
+                /*    text-transform: uppercase;*/
+                border-bottom: 3px solid $techBlue;
+                padding-bottom: 5px;
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: 15px;
+                margin-right: 15px;
+                &:hover,
+                &:focus {
+                    color: $techBlue;
+                    background: #ffffff;
+                    font-weight: 600;
+                    /*    text-transform: uppercase;*/
+                    border-bottom: 3px solid $techBlue;
+                    padding-bottom: 5px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+            }
+        }
+        .open .dropdown-menu {
+            > li> a {
+                background-color: #ffffff;
+                color: #000;
+                &:hover {
+                    background-color: $techBlue;
+                    color: #ffffff;
+                }
+            }
+            background-color: #ffffff;
+            color: #000;
+        }
+    }
+}
+
+#nav-logo {
+    max-width: 200px;
+    margin: auto;
+    position: relative;
+    top: -13px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $techBlue;
+}
+
+.jumbotron {
+    padding: 0;
+    background-color: white; //$friendPurple;
+    position: relative;
+    border: none;
+    .container-fluid {
+        background-color: white; //$friendPurple;
+        border: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        //        img {
+        //            max-height: 500px;
+        //            margin: auto;
+        //        }
+    }
+    .container {
+        h1 {
+            font-weight: 900;
+        }
+    }
+}
+
+#jumbotron-text {
+    //    position: absolute;
+    //    bottom: 10%;
+    //    left: auto;
+    //    right: auto;
+    text-align: center;
+    padding-top: 450px;
+    color: white;
+}
+
+header {
+    background-color: $friendPurple;
+    color: white;
+}
+
+.section-header,
+#box-header {
+    font-weight: bold;
+}
+
+.homepageBoxes {
+    color: black;
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+hr {
+    border: none;
+    height: 5px;
+    /* Set the hr color */
+    color: $techBlue;
+    /* old IE */
+    background-color: $techBlue;
+    /* Modern Browsers */
+    width: 60px;
+}
+
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.row div {
+    margin-bottom: 30px;
+}
+
+.row-learn-more p {
+    margin-top: -15px;
+    padding: 0;
+}
+
+.section-header-spaced {
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.row-footer {
+    margin: 0px auto;
+    padding: 20px 0px 0px 0px;
+    border: 1px $techBlue solid;
+}
+
+@media (min-width: 768px) {
+    #jumbotron-container {
+        height: 600px;
+        border-bottom: 1px solid $techBlue;
+        background-image: url(../images/jumbotron-sm7.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+address {
+    font-size: 100%;
+}
