@@ -120,9 +120,15 @@ a.blueLink {
   color: white;
 }
 
+.top-header {
+  font-weight: 900;
+  color: #7300EF;
+  font-size: 5em;
+}
+
 header {
-  background-color: #7300EF;
-  color: white;
+  background-color: white;
+  color: #7300EF;
 }
 
 .section-header {
@@ -223,12 +229,6 @@ footer .row-footer li a {
     background-repeat: no-repeat;
   }
 }
-.top-header {
-  font-weight: 900;
-  color: white;
-  font-size: 5em;
-}
-
 address {
   font-size: 100%;
 }

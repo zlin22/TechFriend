@@ -86,11 +86,11 @@ a.blueLink {
 
 .jumbotron {
     padding: 0;
-    background-color: white; //$friendPurple;
+    background-color: white; 
     position: relative;
     border: none;
     .container-fluid {
-        background-color: white; //$friendPurple;
+        background-color: white; 
         border: none;
         padding: 0;
         margin: 0;
@@ -139,9 +139,15 @@ a.blueLink {
     }
 }
 
+.top-header {
+    font-weight: 900;
+    color: $friendPurple;
+    font-size: 5em;
+}
+
 header {
-    background-color: $friendPurple;
-    color: white;
+    background-color: white;
+    color: $friendPurple;
 }
 
 .section-header {
@@ -245,11 +251,7 @@ footer {
     }
 }
 
-.top-header {
-    font-weight: 900;
-    color: white;
-    font-size: 5em;
-}
+
 
 address {
     font-size: 100%;
