@@ -119,8 +119,12 @@ header {
   color: black;
 }
 
-span.glyphicon {
-  color: #7300EF;
+span.glyphicon, i.fa {
+  color: #29aae1;
+}
+
+i.fa.fa-facebook, i.fa.fa-twitter {
+  color: white;
 }
 
 hr {

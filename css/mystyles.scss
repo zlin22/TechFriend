@@ -137,9 +137,14 @@ header {
     }
 }
 
-span.glyphicon {
-    color: $friendPurple;
+span.glyphicon, i.fa {
+    color: $techBlue;
 }
+
+i.fa.fa-facebook, i.fa.fa-twitter {
+    color: white;
+}
+
 
 hr {
     border: none;
