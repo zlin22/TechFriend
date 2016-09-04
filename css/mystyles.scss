@@ -1,5 +1,4 @@
-$fontFamily: 'Roboto',
-sans-serif;
+$fontFamily: 'Open Sans', sans-serif;
 $techBlue: #29aae1;
 $friendPurple: #7300EF;
 * {
@@ -7,7 +6,7 @@ $friendPurple: #7300EF;
 }
 
 a.blueLink {
-    color: $techBlue;
+    color: $friendPurple;
 }
 
 .navbar-default {
@@ -100,11 +99,7 @@ a.blueLink {
         //            margin: auto;
         //        }
     }
-    .container {
-        h1 {
-            font-weight: 900;
-        }
-    }
+
 }
 
 #jumbotron-text {
@@ -113,8 +108,9 @@ a.blueLink {
     //    left: auto;
     //    right: auto;
     text-align: center;
-    padding-top: 450px;
+    padding-top: 380px;
     color: white;
+    font-size: 5em;
 }
 
 header {
@@ -122,9 +118,15 @@ header {
     color: white;
 }
 
-.section-header,
-#box-header {
+.section-header {
+    font-weight: 900;
+    color: black;
+    font-size: 5em;
+}
+
+.box-header {
     font-weight: bold;
+    color: $friendPurple;
 }
 
 .homepageBoxes {
@@ -135,15 +137,17 @@ header {
     }
 }
 
+span.glyphicon {
+    color: $friendPurple;
+}
+
 hr {
     border: none;
-    height: 5px;
-    /* Set the hr color */
-    color: $techBlue;
+    height: 3px;
     /* old IE */
     background-color: $techBlue;
     /* Modern Browsers */
-    width: 60px;
+    width: 120px;
 }
 
 address {
@@ -178,11 +182,6 @@ body {
     padding: 0;
 }
 
-.section-header-spaced {
-    font-weight: bold;
-    margin-top: 60px;
-}
-
 .row-footer {
     margin: 0px auto;
     padding: 20px 0px 0px 0px;
@@ -191,12 +190,18 @@ body {
 
 @media (min-width: 768px) {
     #jumbotron-container {
-        height: 600px;
+        height: 550px;
         border-bottom: 1px solid $techBlue;
         background-image: url(../images/jumbotron-sm7.jpg);
         background-position: center;
         background-repeat: no-repeat;
     }
+}
+
+.top-header {
+    font-weight: 900;
+    color: white;
+    font-size: 5em;
 }
 
 address {

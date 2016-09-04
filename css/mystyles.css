@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 a.blueLink {
-  color: #29aae1;
+  color: #7300EF;
 }
 
 .navbar-default {
@@ -88,152 +87,12 @@ a.blueLink {
   margin: 0;
   position: relative;
 }
-.jumbotron .container h1 {
-  font-weight: 900;
-}
 
 #jumbotron-text {
   text-align: center;
-  padding-top: 450px;
+  padding-top: 380px;
   color: white;
-=======
-.navbar-default {
-    background: #fff;
-    font-weight: 600;
-    /*    text-transform: uppercase;*/
-    border-bottom: 1px #29aae1 solid;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #000;
-    background: #fff;
-    font-weight: 600;
-    /*    text-transform: uppercase;*/
-}
-
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-    color: #29aae1;
-    background: #fff;
-    /*
-    border-bottom: 3px #29aae1 solid;
-    padding-bottom: 5px;
-    padding-left:0;
-    padding-right: 0;
-    margin-left: 15px;
-    margin-right: 15px;
-*/
-    /*    background: #fff;*/
-    /*    font-weight: 600;*/
-    /*    text-transform: uppercase;*/
-}
-
-@media (min-width: 768px) {
-    .navbar-default .navbar-nav> .active> a,
-    .navbar-default .navbar-nav> .active> a:hover,
-    .navbar-default .navbar-nav> .active> a:focus {
-        color: #000;
-        background: #fff;
-        font-weight: 600;
-        /*    text-transform: uppercase;*/
-        border-bottom: 3px black solid;
-        padding-bottom: 5px;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav>li>a {
-        color: #000;
-        background: #fff;
-        font-weight: 600;
-        text-align: center;
-        /*    text-transform: uppercase;*/
-    }
-    .navbar-default .navbar-nav> .active> a,
-    .navbar-default .navbar-nav> .active> a:hover,
-    .navbar-default .navbar-nav> .active> a:focus {
-        color: #fff;
-
-        background: #29aae1;
-        font-weight: 600;
-        /*    text-transform: uppercase;*/
-        /*        border-bottom: 3px black solid;*/
-        padding-bottom: 5px;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 15px;
-        margin-right: 15px;
-        text-align: center;
-
-    }
-    .navbar-default .navbar-nav .open .dropdown-menu> li> a,
-    .navbar-default .navbar-nav .open .dropdown-menu {
-        text-align: center;
-    }
-}
-
-.navbar-default .navbar-nav .open .dropdown-menu> li> a,
-.navbar-default .navbar-nav .open .dropdown-menu {
-    background-color: #fff;
-    color: #000;
-}
-
-.navbar-default .navbar-nav .open .dropdown-menu> li> a:hover {
-    background-color: #29aae1;
-    color: #fff;
-}
-
-#nav-logo {
-    max-width: 200px;
-    margin: auto;
-    position: relative;
-    top: -13px;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #29aae1;
-}
-
-.jumbotron {
-    padding: 0;
-    background-color: white;
-    position: relative;
-    border: none;
-}
-
-.jumbotron .container-fluid {
-    background-color: white;
-    border: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-
-.jumbotron .container-fluid img {
-    max-height: 500px;
-    margin: auto;
-    /*    margin-bottom: -150px;*/
-    /*    max-width: none;*/
-    /*    amazon*/
-    /*    height: 640px;*/
-    /*    width: 1500px;*/
-    /*    max-width: none;*/
-    /*    vertical-align: top;*/
-}
-
-.jumbotron .container h1,
-.jumbotron .container p {
-    /*    color: white;*/
-    /*    position: absolute;*/
-    /*    margin: auto;*/
-    /*    bottom: 55px;*/
-    /*    margin-right: -50%;*/
-    /*    transform: translate(-50%, -50%)*/
->>>>>>> origin/master
+  font-size: 5em;
 }
 
 header {
@@ -241,9 +100,15 @@ header {
   color: white;
 }
 
-.section-header,
-#box-header {
+.section-header {
+  font-weight: 900;
+  color: black;
+  font-size: 5em;
+}
+
+.box-header {
   font-weight: bold;
+  color: #7300EF;
 }
 
 .homepageBoxes {
@@ -254,16 +119,17 @@ header {
   color: black;
 }
 
+span.glyphicon {
+  color: #7300EF;
+}
+
 hr {
-<<<<<<< HEAD
   border: none;
-  height: 5px;
-  /* Set the hr color */
-  color: #29aae1;
+  height: 3px;
   /* old IE */
   background-color: #29aae1;
   /* Modern Browsers */
-  width: 60px;
+  width: 120px;
 }
 
 address {
@@ -287,43 +153,6 @@ body {
   padding: 50px 0px 50px 0px;
   border-bottom: 1px ridge;
   min-height: 400px;
-=======
-    border: none;
-    height: 5px;
-    /* Set the hr color */
-    color: #29aae1;
-    /* old IE */
-    background-color: #29aae1;
-    /* Modern Browsers */
-    width: 60px;
-    /*
-    text-align: left;
-    margin-left: 0;
-*/
-}
-
-address {
-    font-size: 80%;
-    margin: 0px;
-    color: #0f0f0f;
-}
-
-body {
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
-}
-
-.row-header {
-    margin: 0px auto;
-    padding: 0px auto;
-}
-
-.row-content {
-    margin: 0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height: 400px;
->>>>>>> origin/master
 }
 
 .row div {
@@ -331,22 +160,11 @@ body {
 }
 
 .row-learn-more p {
-<<<<<<< HEAD
   margin-top: -15px;
   padding: 0;
-=======
-    margin-top: -15px;
-    padding: 0;
->>>>>>> origin/master
-}
-
-.section-header-spaced {
-  font-weight: bold;
-  margin-top: 60px;
 }
 
 .row-footer {
-<<<<<<< HEAD
   margin: 0px auto;
   padding: 20px 0px 0px 0px;
   border: 1px #29aae1 solid;
@@ -354,31 +172,21 @@ body {
 
 @media (min-width: 768px) {
   #jumbotron-container {
-    height: 600px;
+    height: 550px;
     border-bottom: 1px solid #29aae1;
     background-image: url(../images/jumbotron-sm7.jpg);
     background-position: center;
     background-repeat: no-repeat;
   }
-=======
-    /*    background-color: #AfAfAf;*/
-    margin: 0px auto;
-    padding: 20px 0px 0px 0px;
-    border: 1px #29aae1 solid;
+}
+.top-header {
+  font-weight: 900;
+  color: white;
+  font-size: 5em;
 }
 
-header,
-#jumbotron-container {
-    border-bottom: 1px #29aae1 solid;
->>>>>>> origin/master
-}
 address {
-<<<<<<< HEAD
   font-size: 100%;
 }
 
 /*# sourceMappingURL=mystyles.css.map */
-=======
-    font-size: 100%
-}
->>>>>>> origin/master
