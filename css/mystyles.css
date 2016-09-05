@@ -87,16 +87,16 @@ a.blueLink {
   margin: 0;
   position: relative;
 }
-.jumbotron button {
-  margin-left: 43%;
-}
 .jumbotron ul {
-  margin-left: 43%;
+  position: relative;
+  margin: auto;
+  float: none;
+  width: 105px;
 }
 
 #jumbotron-text {
   text-align: center;
-  padding-top: 380px;
+  padding-top: 50px;
   color: white;
   font-size: 5em;
 }

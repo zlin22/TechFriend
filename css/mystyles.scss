@@ -95,27 +95,18 @@ a.blueLink {
         padding: 0;
         margin: 0;
         position: relative;
-        //        img {
-        //            max-height: 500px;
-        //            margin: auto;
-        //        }
     }
-    button {
-        margin-left: 43%;
-    }
-    
     ul {
-        margin-left: 43%;
+        position: relative;
+        margin: auto;
+        float: none;
+        width: 105px;
     }
 }
 
 #jumbotron-text {
-    //    position: absolute;
-    //    bottom: 10%;
-    //    left: auto;
-    //    right: auto;
     text-align: center;
-    padding-top: 380px;
+    padding-top: 50px;
     color: white;
     font-size: 5em;
 }
@@ -128,6 +119,7 @@ a.blueLink {
         background-color: $friendPurple;
         color: white;
     }
+    
 }
 
 #callToActionDropdown {
