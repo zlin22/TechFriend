@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<META HTTP-EQUIV="refresh" CONTENT="1">
+
+<body id="body">
+    
+    <script>
+        var colors = ["blue", "cyan", "gold", "gray", "green", "magenta", "orange", "red", "white", "yellow"];
+        var height = 500;
+        var width = 500;
+        var left = 25;
+        var topDistance = 25;
+        
+        while (height>50) {
+            var newSquare = document.createElement("div");
+            newSquare.style.position = "absolute";
+            newSquare.style.height = height + "px";
+            newSquare.style.width = width + "px";
+            newSquare.style.backgroundColor = colors[Math.floor(Math.random() * 10)];
+            newSquare.style.border = "3px solid black";
+            newSquare.style.left = left + "px";
+            newSquare.style.top = topDistance + "px";
+            
+            document.getElementById("body").appendChild(newSquare)
+            
+            height -= 20;
+            width -= 20;
+            left += 10;
+            topDistance += 10;
+            
+            
+        }
+
+        //        var guess;
+        ////        document.write(correctColor);
+        //        var counter = 0;
+        //        var correctColor;
+        //        var do_game = function () {
+        //            correctColor = colors[Math.floor(Math.random()*colors.length)];
+        //            do {
+        //                guess = prompt("I am thinking of one of these colors:\n\nblue, cyan, gold, gray, green, magenta, orange, red, white, yellow\n\n What color am I thinking of?"+correctColor);
+        //                counter += 1;
+        //                finished = checkGuess();
+        //            }while(!finished);
+        //        };
+        //            
+        ////        console.log(colors.indexOf(guess))
+        //        var checkGuess = function () {
+        //            if (guess == correctColor) {
+        //                alert("congrats! it took you " + counter + " guesses.\n\n Color in background");
+        //                var myBody = document.getElementsByTagName("body")[0];
+        //                myBody.style.backgroundColor=correctColor;
+        //                return true;
+        //            }
+        //            else if (colors.indexOf(guess)<0) {
+        //                alert("Sorry, I don't recognize your color.\n\nPlease try again.");
+        //                return false;
+        //            }
+        //            else if (guess<correctColor) {
+        //                alert("Sorry, your guess is not correct!\n\nYour guess is lower than actual color.");     
+        //                return false;
+        //            }
+        //            else{
+        //                alert("Sorry, your guess is not correct!\n\nYour guess is higher than actual color");
+        //                return false;
+        //            }
+        //        };
+
+    </script>
+</body>
+
+</html>
