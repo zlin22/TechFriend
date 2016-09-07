@@ -1,15 +1,16 @@
-* {
-  font-family: "Open Sans", sans-serif;
-}
-
 a.blueLink {
   color: #29aae1;
+}
+
+.headerText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
 }
 
 .navbar-default {
   background: #ffffff;
   font-weight: 600;
-  border-bottom: 1px solid #29aae1;
+  border-bottom: 1px solid lightgrey;
 }
 .navbar-default .navbar-nav > li > a {
   color: black;
@@ -79,6 +80,7 @@ a.blueLink {
   background-color: white;
   position: relative;
   border: none;
+  margin-bottom: 0;
 }
 .jumbotron .container-fluid {
   background-color: white;
@@ -161,12 +163,11 @@ i.fa.fa-twitter {
 }
 
 hr {
-  border: none;
-  height: 3px;
+  height: 1px;
   /* old IE */
-  background-color: #29aae1;
+  background-color: lightgrey;
   /* Modern Browsers */
-  width: 120px;
+  width: 100%;
 }
 
 address {
@@ -202,28 +203,27 @@ body {
 }
 
 footer {
-  background-color: #7300EF;
+  background-color: #e7e7e7;
 }
 footer .row-footer {
   margin: 0px;
   padding: 20px 0px 0px 0px;
-  color: white;
+  color: black;
   font-size: 1.2em;
 }
 footer .row-footer address {
-  color: white;
+  color: black;
 }
 footer .row-footer address a {
-  color: white;
+  color: black;
 }
 footer .row-footer li a {
-  color: white;
+  color: black;
 }
 
 @media (min-width: 768px) {
   #jumbotron-container {
-    height: 550px;
-    border-bottom: 1px solid #29aae1;
+    height: 700px;
     background-image: url(../images/jumbotron-sm7.jpg);
     background-position: center;
     background-repeat: no-repeat;

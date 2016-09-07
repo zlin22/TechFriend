@@ -1,19 +1,25 @@
-$fontFamily: 'Open Sans',
-sans-serif;
+$fontFamilyHeader: 'Montserrat', sans-serif;
+$fontFamilyNav: 'Cabin', sans-serif;
+
 $techBlue: #29aae1;
 $friendPurple: #7300EF;
-* {
-    font-family: $fontFamily;
-}
+//* {
+//    font-family: $fontFamilyBody;
+//}
 
 a.blueLink {
     color: $techBlue;
 }
 
+.headerText {
+    font-family: $fontFamilyHeader;
+    font-weight: 900;
+}
+
 .navbar-default {
     background: #ffffff;
     font-weight: 600;
-    border-bottom: 1px solid $techBlue;
+    border-bottom: 1px solid lightgrey;
     .navbar-nav {
         > {
             li> a {
@@ -89,6 +95,7 @@ a.blueLink {
     background-color: white; 
     position: relative;
     border: none;
+    margin-bottom: 0;
     .container-fluid {
         background-color: white; 
         border: none;
@@ -172,12 +179,12 @@ i.fa.fa-twitter {
 }
 
 hr {
-    border: none;
-    height: 3px;
+//    border: none;
+    height: 1px;
     /* old IE */
-    background-color: $techBlue;
+    background-color: lightgrey;
     /* Modern Browsers */
-    width: 120px;
+    width: 100%;
 }
 
 address {
@@ -213,30 +220,29 @@ body {
 }
 
 footer {
-    background-color: $friendPurple;
+    background-color: #e7e7e7;
     .row-footer {
         margin: 0px;
         padding: 20px 0px 0px 0px;
         //    border: 1px $techBlue solid;
         //    background-color: $friendPurple;
-        color: white;
+        color: black;
         font-size: 1.2em;
         address {
-            color: white;
+            color: black;
             a {
-                color: white;
+                color: black;
             }
         }
         li a {
-            color: white;
+            color: black;
         }
     }
 }
 
 @media (min-width: 768px) {
     #jumbotron-container {
-        height: 550px;
-        border-bottom: 1px solid $techBlue;
+        height: 700px;
         background-image: url(../images/jumbotron-sm7.jpg);
         background-position: center;
         background-repeat: no-repeat;
