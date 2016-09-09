@@ -1,256 +1,275 @@
-$fontFamilyHeader: 'Montserrat', sans-serif;
-$fontFamilyNav: 'Cabin', sans-serif;
-
+$fontFamilyHeader: 'Montserrat',
+sans-serif;
+$fontFamilyNav: 'Cabin',
+sans-serif;
 $techBlue: #29aae1;
 $friendPurple: #7300EF;
+$navPurple: #8f42dc;
+$jumbotronBlue: #00ccff;
 //* {
 //    font-family: $fontFamilyBody;
 //}
 
 a.blueLink {
-    color: $techBlue;
+	color: $jumbotronBlue;
 }
 
 .headerText {
-    font-family: $fontFamilyHeader;
-    font-weight: 900;
+	font-family: $fontFamilyHeader;
+	font-weight: 900;
 }
 
 .navbar-default {
-    background: #ffffff;
-    font-weight: 600;
-    border-bottom: 1px solid lightgrey;
-    .navbar-nav {
-        > {
-            li> a {
-                color: black;
-                background: #ffffff;
-                font-weight: 600;
-                &:hover,
-                &:focus {
-                    color: $techBlue;
-                    background: #ffffff;
-                    border-bottom: 3px solid $techBlue;
-                    padding-bottom: 5px;
-                    padding-left: 0;
-                    padding-right: 0;
-                    margin-left: 15px;
-                    margin-right: 15px;
-                }
-            }
-            .active> a {
-                color: $techBlue;
-                background: #ffffff;
-                font-weight: 600;
-                /*    text-transform: uppercase;*/
-                border-bottom: 3px solid $techBlue;
-                padding-bottom: 5px;
-                padding-left: 0;
-                padding-right: 0;
-                margin-left: 15px;
-                margin-right: 15px;
-                &:hover,
-                &:focus {
-                    color: $techBlue;
-                    background: #ffffff;
-                    font-weight: 600;
-                    /*    text-transform: uppercase;*/
-                    border-bottom: 3px solid $techBlue;
-                    padding-bottom: 5px;
-                    padding-left: 0;
-                    padding-right: 0;
-                    margin-left: 15px;
-                    margin-right: 15px;
-                }
-            }
-        }
-        .open .dropdown-menu {
-            > li> a {
-                background-color: #ffffff;
-                color: #000;
-                &:hover {
-                    background-color: $techBlue;
-                    color: #ffffff;
-                }
-            }
-            background-color: #ffffff;
-            color: #000;
-        }
-    }
+	background: $navPurple;
+//	font-weight: 600;
+	font-family: $fontFamilyNav;
+	border-bottom: 1px solid $navPurple;
+	text-transform: uppercase;
+	.navbar-nav {
+		> {
+			li> a {
+				color: white;
+				background: $navPurple;
+//				font-weight: 600;
+				&:hover,
+				&:focus {
+					color: white;
+					background: $navPurple;
+					border-bottom: 3px solid white;
+					padding-bottom: 5px;
+					padding-left: 0;
+					padding-right: 0;
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+			}
+			.open>a,
+			.active> a {
+				color: white;
+				background: $navPurple;
+//				font-weight: 600;
+				/*    text-transform: uppercase;*/
+				border-bottom: 3px solid white;
+				padding-bottom: 5px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-left: 15px;
+				margin-right: 15px;
+				&:hover,
+				&:focus {
+					color: white;
+					background: $navPurple;
+//					font-weight: 600;
+					/*    text-transform: uppercase;*/
+					border-bottom: 3px solid white;
+					padding-bottom: 5px;
+					padding-left: 0;
+					padding-right: 0;
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+			}
+		}
+		.open .dropdown-menu {
+			> li> a {
+				background-color: $navPurple;
+				color: white;
+				&:hover {
+					background-color: white;
+					color: $navPurple;
+				}
+			}
+			background-color: $navPurple;
+			color: white;
+		}
+	}
 }
 
 #nav-logo {
-    max-width: 200px;
-    margin: auto;
-    position: relative;
-    top: -13px;
+	max-width: 200px;
+	margin: auto;
+	position: relative;
+	top: -13px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: $techBlue;
+	background-color: $navPurple;
 }
 
 .jumbotron {
-    padding: 0;
-    background-color: white; 
-    position: relative;
-    border: none;
-    margin-bottom: 0;
-    .container-fluid {
-        background-color: white; 
-        border: none;
-        padding: 0;
-        margin: 0;
-        position: relative;
-    }
-    ul {
-        position: relative;
-        margin: auto;
-        float: none;
-        width: 105px;
-    }
+	padding: 0;
+	//    background-color: $friend; 
+	position: relative;
+	border: none;
+	margin-bottom: 0;
+	//@media (min-width: 768px) {
+	#jumbotron-image-container {
+		height: 400px;
+		background-image: url(../images/jumbotronDevices.png);
+		background-position: center;
+		//        background-repeat: no-repeat;
+	}
+	//}
+	#jumbotron-text-container {
+		background-color: $jumbotronBlue;
+		border: none;
+		padding: 100px 0px;
+		margin: 0;
+		//		height: 300px;
+		color: white;
+		vertical-align: middle;
+	}
+	//	.container-fluid {}
+	ul {
+		position: relative;
+		margin: auto;
+		float: none;
+		width: 105px;
+		background-color: $navPurple;
+	}
 }
 
 #jumbotron-text {
-    text-align: center;
-    padding-top: 50px;
-    color: white;
-    font-size: 5em;
+	text-align: center;
+	padding-top: 50px;
+	color: white;
+	font-size: 5em;
+}
+
+#callToActionNav {
+	background-color: $navPurple;
+	color: white;
+	text-transform: uppercase;
+	border: 1px solid white;
+	&:hover,
+	.active {
+		background-color: $navPurple;
+		color: white;
+	}
 }
 
 #callToAction {
-    background-color: $friendPurple;
-    color: white;
-    &:hover,
-    .active {
-        background-color: $friendPurple;
-        color: white;
-    }
-    
+	margin-top: 15px;
+	background-color: $navPurple;
+	color: white;
+	&:hover,
+	.active {
+		background-color: $navPurple;
+		color: white;
+	}
 }
 
 #callToActionDropdown {
-    background-color: white;
-    color: $friendPurple;
-    &:hover {
-        background-color: $friendPurple;
-        color: white;
-    }
+	background-color: $navPurple;
+	color: white;
+	&:hover {
+		background-color: white;
+		color: $navPurple;
+	}
 }
 
 .top-header {
-    font-weight: 900;
-    color: $friendPurple;
-    font-size: 5em;
+	font-weight: 900;
+	color: $friendPurple;
+	font-size: 5em;
 }
 
 header {
-    background-color: white;
-    color: $friendPurple;
+	background-color: white;
+	color: $friendPurple;
 }
 
 .section-header {
-    font-weight: 900;
-    color: black;
-    font-size: 5em;
+	font-weight: 900;
+	color: black;
+	font-size: 5em;
 }
 
 .box-header {
-    font-weight: bold;
-    color: black;
+	font-weight: bold;
+	color: black;
 }
 
 .homepageBoxes {
-    color: black;
-    &:hover {
-        text-decoration: none;
-        color: black;
-    }
+	color: black;
+	&:hover {
+		text-decoration: none;
+		color: black;
+	}
 }
 
 span.glyphicon,
 i.fa {
-    color: $techBlue;
+	color: $jumbotronBlue;
 }
 
 i.fa.fa-facebook,
 i.fa.fa-twitter {
-    color: white;
+	color: white;
 }
 
 hr {
-//    border: none;
-    height: 1px;
-    /* old IE */
-    background-color: lightgrey;
-    /* Modern Browsers */
-    width: 100%;
+	//    border: none;
+	height: 1px;
+	/* old IE */
+	background-color: lightgrey;
+	/* Modern Browsers */
+	width: 100%;
 }
 
 address {
-    font-size: 80%;
-    margin: 0px;
-    color: #0f0f0f;
+	font-size: 80%;
+	margin: 0px;
+	color: #0f0f0f;
 }
 
 body {
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
+	padding: 50px 0px 0px 0px;
+	z-index: 0;
 }
 
 .row-header {
-    margin: 0px auto;
-    padding: 0px auto;
+	margin: 0px auto;
+	padding: 0px auto;
 }
 
 .row-content {
-    margin: 0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height: 400px;
+	margin: 0px auto;
+	padding: 50px 0px 50px 0px;
+	border-bottom: 1px ridge;
+	min-height: 400px;
 }
 
 .row div {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .row-learn-more p {
-    margin-top: -15px;
-    padding: 0;
+	margin-top: -15px;
+	padding: 0;
 }
 
 footer {
-    background-color: #e7e7e7;
-    .row-footer {
-        margin: 0px;
-        padding: 20px 0px 0px 0px;
-        //    border: 1px $techBlue solid;
-        //    background-color: $friendPurple;
-        color: black;
-        font-size: 1.2em;
-        address {
-            color: black;
-            a {
-                color: black;
-            }
-        }
-        li a {
-            color: black;
-        }
-    }
+	background-color: #e7e7e7;
+	.row-footer {
+		margin: 0px;
+		padding: 20px 0px 0px 0px;
+		//    border: 1px $techBlue solid;
+		//    background-color: $friendPurple;
+		color: black;
+		font-size: 1.2em;
+		address {
+			color: black;
+			a {
+				color: black;
+			}
+		}
+		li a {
+			color: black;
+		}
+	}
 }
-
-@media (min-width: 768px) {
-    #jumbotron-container {
-        height: 700px;
-        background-image: url(../images/jumbotron-sm7.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-}
-
-
 
 address {
-    font-size: 100%;
+	font-size: 100%;
 }
