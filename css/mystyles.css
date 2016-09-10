@@ -13,6 +13,9 @@ a.blueLink {
   border-bottom: 1px solid #8f42dc;
   text-transform: uppercase;
 }
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
 .navbar-default .navbar-nav > li > a {
   color: white;
   background: #8f42dc;
@@ -72,10 +75,6 @@ a.blueLink {
   top: -13px;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #8f42dc;
-}
-
 .jumbotron {
   padding: 0;
   position: relative;
@@ -84,7 +83,7 @@ a.blueLink {
 }
 .jumbotron #jumbotron-image-container {
   height: 400px;
-  background-image: url(../images/jumbotronDevices.png);
+  background-image: url(../images/jumbotron-sm7.jpg);
   background-position: center;
 }
 .jumbotron #jumbotron-text-container {
