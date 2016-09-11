@@ -2,320 +2,473 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>TechFriend - Your Personal Technology Advisor and Friend</title>
-	<meta name="description" content="We select the most ideal devices for your needs, hand deliver them, and set them up in person.">
-	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/bootstrap-social.css" rel="stylesheet">
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TechFriend - Your Personal Technology Advisor and Friend</title>
+    <meta name="description" content="We select the most ideal devices for your needs, hand deliver them, and set them up in person.">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<link rel="icon" href="favicon.ico">
-	<link href="css/mystyles.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 
 
-	<!-- /snippets/social-meta-tags.liquid -->
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="TechFriend - Get Your Tech Under Control">
-	<meta property="og:url" content="https://www.techfriend.us/">
-	<meta property="og:description" content="We select the best devices for your needs, deliver them, and set them up for you in person.">
-	<meta property="og:image" content="http://cdn.shopify.com/s/files/1/1404/4143/t/3/assets/home_slide_1_1024x1024.jpg?9321707461568485762">
-	<meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/1404/4143/t/3/assets/home_slide_1_1024x1024.jpg?9321707461568485762">
-	<meta property="og:site_name" content="TechFriend">
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="TechFriend - Your Personal Technology Friend">
-	<meta name="twitter:description" content="We select the best devices for your needs, deliver them, and set them up for you in person.">
-	<meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/1404/4143/t/3/assets/home_slide_1_1024x1024.jpg?9321707461568485762">
-	<link rel="canonical" href="https://www.techfriend.us/">
+    <!-- /snippets/social-meta-tags.liquid -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TechFriend - Get Your Tech Under Control">
+    <meta property="og:url" content="https://www.techfriend.us/">
+    <meta property="og:description" content="We select the best devices for your needs, deliver them, and set them up for you in person.">
+    <meta property="og:image" content="http://cdn.shopify.com/s/files/1/1404/4143/t/3/assets/home_slide_1_1024x1024.jpg?9321707461568485762">
+    <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/1404/4143/t/3/assets/home_slide_1_1024x1024.jpg?9321707461568485762">
+    <meta property="og:site_name" content="TechFriend">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="TechFriend - Your Personal Technology Friend">
+    <meta name="twitter:description" content="We select the best devices for your needs, deliver them, and set them up for you in person.">
+    <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/1404/4143/t/3/assets/home_slide_1_1024x1024.jpg?9321707461568485762">
+    <link rel="canonical" href="https://www.techfriend.us/">
 </head>
 
 <!-- begin olark code -->
 <script data-cfasync="false" type='text/javascript'>
-	/*<![CDATA[*/
-	window.olark || (function(c) {
-		var f = window,
-			d = document,
-			l = f.location.protocol == "https:" ? "https:" : "http:",
-			z = c.name,
-			r = "load";
-		var nt = function() {
-			f[z] = function() {
-				(a.s = a.s || []).push(arguments)
-			};
-			var a = f[z]._ = {},
-				q = c.methods.length;
-			while (q--) {
-				(function(n) {
-					f[z][n] = function() {
-						f[z]("call", n, arguments)
-					}
-				})(c.methods[q])
-			}
-			a.l = c.loader;
-			a.i = nt;
-			a.p = {
-				0: +new Date
-			};
-			a.P = function(u) {
-				a.p[u] = new Date - a.p[0]
-			};
+    /*<![CDATA[*/
+    window.olark || (function(c) {
+        var f = window,
+            d = document,
+            l = f.location.protocol == "https:" ? "https:" : "http:",
+            z = c.name,
+            r = "load";
+        var nt = function() {
+            f[z] = function() {
+                (a.s = a.s || []).push(arguments)
+            };
+            var a = f[z]._ = {},
+                q = c.methods.length;
+            while (q--) {
+                (function(n) {
+                    f[z][n] = function() {
+                        f[z]("call", n, arguments)
+                    }
+                })(c.methods[q])
+            }
+            a.l = c.loader;
+            a.i = nt;
+            a.p = {
+                0: +new Date
+            };
+            a.P = function(u) {
+                a.p[u] = new Date - a.p[0]
+            };
 
-			function s() {
-				a.P(r);
-				f[z](r)
-			}
-			f.addEventListener ? f.addEventListener(r, s, false) : f.attachEvent("on" + r, s);
-			var ld = function() {
-				function p(hd) {
-					hd = "head";
-					return ["<", hd, "></", hd, "><", i, ' onl' + 'oad="var d=', g, ";d.getElementsByTagName('head')[0].", j, "(d.", h, "('script')).", k, "='", l, "//", a.l, "'", '"', "></", i, ">"].join("")
-				}
-				var i = "body",
-					m = d[i];
-				if (!m) {
-					return setTimeout(ld, 100)
-				}
-				a.P(1);
-				var j = "appendChild",
-					h = "createElement",
-					k = "src",
-					n = d[h]("div"),
-					v = n[j](d[h](z)),
-					b = d[h]("iframe"),
-					g = "document",
-					e = "domain",
-					o;
-				n.style.display = "none";
-				m.insertBefore(n, m.firstChild).id = z;
-				b.frameBorder = "0";
-				b.id = z + "-loader";
-				if (/MSIE[ ]+6/.test(navigator.userAgent)) {
-					b.src = "javascript:false"
-				}
-				b.allowTransparency = "true";
-				v[j](b);
-				try {
-					b.contentWindow[g].open()
-				} catch (w) {
-					c[e] = d[e];
-					o = "javascript:var d=" + g + ".open();d.domain='" + d.domain + "';";
-					b[k] = o + "void(0);"
-				}
-				try {
-					var t = b.contentWindow[g];
-					t.write(p());
-					t.close()
-				} catch (x) {
-					b[k] = o + 'd.write("' + p().replace(/"/g, String.fromCharCode(92) + '"') + '");d.close();'
-				}
-				a.P(2)
-			};
-			ld()
-		};
-		nt()
-	})({
-		loader: "static.olark.com/jsclient/loader0.js",
-		name: "olark",
-		methods: ["configure", "extend", "declare", "identify"]
-	});
-	/* custom configuration goes here (www.olark.com/documentation) */
-	olark.identify('6784-781-10-4096'); /*]]>*/
+            function s() {
+                a.P(r);
+                f[z](r)
+            }
+            f.addEventListener ? f.addEventListener(r, s, false) : f.attachEvent("on" + r, s);
+            var ld = function() {
+                function p(hd) {
+                    hd = "head";
+                    return ["<", hd, "></", hd, "><", i, ' onl' + 'oad="var d=', g, ";d.getElementsByTagName('head')[0].", j, "(d.", h, "('script')).", k, "='", l, "//", a.l, "'", '"', "></", i, ">"].join("")
+                }
+                var i = "body",
+                    m = d[i];
+                if (!m) {
+                    return setTimeout(ld, 100)
+                }
+                a.P(1);
+                var j = "appendChild",
+                    h = "createElement",
+                    k = "src",
+                    n = d[h]("div"),
+                    v = n[j](d[h](z)),
+                    b = d[h]("iframe"),
+                    g = "document",
+                    e = "domain",
+                    o;
+                n.style.display = "none";
+                m.insertBefore(n, m.firstChild).id = z;
+                b.frameBorder = "0";
+                b.id = z + "-loader";
+                if (/MSIE[ ]+6/.test(navigator.userAgent)) {
+                    b.src = "javascript:false"
+                }
+                b.allowTransparency = "true";
+                v[j](b);
+                try {
+                    b.contentWindow[g].open()
+                } catch (w) {
+                    c[e] = d[e];
+                    o = "javascript:var d=" + g + ".open();d.domain='" + d.domain + "';";
+                    b[k] = o + "void(0);"
+                }
+                try {
+                    var t = b.contentWindow[g];
+                    t.write(p());
+                    t.close()
+                } catch (x) {
+                    b[k] = o + 'd.write("' + p().replace(/"/g, String.fromCharCode(92) + '"') + '");d.close();'
+                }
+                a.P(2)
+            };
+            ld()
+        };
+        nt()
+    })({
+        loader: "static.olark.com/jsclient/loader0.js",
+        name: "olark",
+        methods: ["configure", "extend", "declare", "identify"]
+    });
+    /* custom configuration goes here (www.olark.com/documentation) */
+    olark.identify('6784-781-10-4096'); /*]]>*/
+
 </script><noscript><a href="https://www.olark.com/site/6784-781-10-4096/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
 <!-- end olark code -->
 
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-				<a class="navbar-brand" href="index.html"><img id="nav-logo" alt="Brand" src="images/techFriendLogoPurple.png" class="img-responsive"></a>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right text-center">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="aboutus.html">About Us</a></li>
-					<li class="dropdown">
-						<a href="ourservices.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                         Our Services <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<!--                            <li class="dropdown-header">Remote Services</li>-->
-							<li><a href="ourservices.html">Recommendation</a></li>
-							<li><a href="ourservices.html#setup">Setup & Delivery</a></li>
-							<!--                            <li role="separator" class="divider"></li>-->
-							<!--                            <li class="dropdown-header">In-Person Services</li>-->
-							<li><a href="ourservices.html#tutorial">Tutorial</a></li>
-							<li><a href="ourservices.html#troubleshooting">Troubleshooting</a></li>
-						</ul>
-					</li>
-					<form class="navbar-form navbar-left text-center">
-						<button id="callToActionNav" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Get Started<span class="caret"></span></button>
-						<ul class="dropdown-menu">
-							<!-- BEGIN OLARK CHAT LINK -->
-							<li><a class="text-center" id="callToActionDropdown" href="javascript:void(0);" onclick="olark('api.box.expand')">
+                <a class="navbar-brand" href="index.html"><img id="nav-logo" alt="Brand" src="images/tf-nav-logo.png" class="img-responsive"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right text-center">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="ourservices.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                         Our Services 
+                            <span id="caretGlyphicon" class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!--                            <li class="dropdown-header">Remote Services</li>-->
+                            <li><a href="ourservices.html">Recommendation</a></li>
+                            <li><a href="ourservices.html#setup">Setup & Delivery</a></li>
+                            <!--                            <li role="separator" class="divider"></li>-->
+                            <!--                            <li class="dropdown-header">In-Person Services</li>-->
+                            <li><a href="ourservices.html#tutorial">Tutorial</a></li>
+                            <li><a href="ourservices.html#troubleshooting">Troubleshooting</a></li>
+                        </ul>
+                    </li>
+                    <form class="navbar-form navbar-left text-center">
+                        <button id="callToActionNav" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Get Started <span id="caretGlyphicon" class="glyphicon glyphicon-chevron-down"></span></button>
+                        <ul class="dropdown-menu">
+                            <!-- BEGIN OLARK CHAT LINK -->
+                            <li><a class="text-center" id="callToActionDropdown" href="javascript:void(0);" onclick="olark('api.box.expand')">
                                 Live Chat
                             </a></li>
-							<!-- END OLARK CHAT LINK -->
-							<li><a class="text-center" id="callToActionDropdown" href="tel: +16468832413">Call</a></li>
-							<li><a class="text-center" id="callToActionDropdown" href="mailto: contact@techfriend.us?subject=I+have+a+tech+question!" target="_blank">Email</a></li>
-						</ul>
-					</form>
+                            <!-- END OLARK CHAT LINK -->
+                            <li><a class="text-center" id="callToActionDropdown" href="tel: +16468832413">Call</a></li>
+                            <li><a class="text-center" id="callToActionDropdown" href="mailto: contact@techfriend.us?subject=I+have+a+tech+question!" target="_blank">Email</a></li>
+                        </ul>
+                    </form>
 
-				</ul>
-			</div>
-		</div>
-	</nav>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<header class="jumbotron">
+    <header class="jumbotron">
 
-		<!-- Main component for a primary marketing message or call to action -->
+        <!-- Main component for a primary marketing message or call to action -->
 
-		<div id="jumbotron-image-container" class="container-fluid">
-			<!--            <img src="images/jumbotronDevices.png" alt="ctrl-lego" class="img-responsive visible-xs-block">-->
-			<!--            <img src="images/jumbotron-sm.jpg" alt="ctrl-lego" class="img-responsive hidden-xs">-->
-		</div>
+        <div id="jumbotron-image-container" class="container-fluid">
+            <!--            <img src="images/jumbotronDevices.png" alt="ctrl-lego" class="img-responsive visible-xs-block">-->
+            <!--            <img src="images/jumbotron-sm.jpg" alt="ctrl-lego" class="img-responsive hidden-xs">-->
+        </div>
 
-		<div id="jumbotron-text-container" class="container-fluid">
-			<div class="row center">
-				<!--				<div class="col-xs-12">-->
-				<h1 class="text-center headerText" id="jumbotron-text-xs">Let us be your (tech) guide.</h1>
-				<h4 class="text-center">We're your friendly tech consultants. We offer advice, setup, and education for your personal technology needs.</h4>
-				<!--				</div>-->
-			</div>
-			<div class="row text-center">
-				<button id="callToAction" type="button" class="btn btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Get Started<span class="caret"></span></button>
-				<ul id="" class="dropdown-menu">
-					<!-- BEGIN OLARK CHAT LINK -->
-					<li><a class="text-center" id="callToActionDropdown" href="javascript:void(0);" onclick="olark('api.box.expand')">
+        <div id="jumbotron-text-container" class="container-fluid">
+            <div class="row center">
+                <!--				<div class="col-xs-12">-->
+                <h1 class="text-center headerText" id="jumbotron-text-xs">Let us be your (tech) guide.</h1>
+                <h4 class="text-center">We're your friendly tech consultants. We offer advice, setup, and education for your personal technology needs.</h4>
+                <!--				</div>-->
+            </div>
+            <div class="row text-center">
+                <div class="dropdown">
+                    <button id="callToAction" type="button" class="btn btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Get Started <span id="caretGlyphicon" class="glyphicon glyphicon-chevron-down"></span></button>
+                    <ul id="" class="dropdown-menu">
+                        <!-- BEGIN OLARK CHAT LINK -->
+                        <li><a class="text-center" id="callToActionDropdown" href="javascript:void(0);" onclick="olark('api.box.expand')">
                                 Live Chat
                             </a></li>
-					<!-- END OLARK CHAT LINK -->
-					<li><a class="text-center" id="callToActionDropdown" href="tel: +16468832413">Call</a></li>
-					<li><a class="text-center" id="callToActionDropdown" href="mailto: contact@techfriend.us">Email</a></li>
-				</ul>
-			</div>
+                        <!-- END OLARK CHAT LINK -->
+                        <li><a class="text-center" id="callToActionDropdown" href="tel: +16468832413">Call</a></li>
+                        <li><a class="text-center" id="callToActionDropdown" href="mailto: contact@techfriend.us">Email</a></li>
+                    </ul>
+                </div>
+            </div>
 
-		</div>
-	</header>
+        </div>
+    </header>
 
-	<section class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<br>
-				<h2 class="text-center section-header headerText">What We Do</h2>
-				<br>
-			</div>
+    <section id="what-we-do" class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <!--				<br>-->
+                <h2 class="text-center section-header">What We Do</h2>
+                <br>
+            </div>
 
-			
-			<a class="homepageBoxes" href="ourservices.html#advice">
-				<div class="col-xs-12 col-sm-6 col-md-3 text-center">
-					<span class="glyphicon glyphicon-thumbs-up fa-3x"></span>
-					<h3 class="box-header" class="text-Left">Personalized Recommendation</h3>
-					<p>We all use tech differently. In minutes, our experts will help you find theright tech for your unique needs. Best of all, your first consultation is <strong>completely free!</strong></p>
-					<!--                <p>Contrary to what manufacturers like to say in their marketing, there is no "best device" for everyone; there is only the ideal device for you. Choosing that device is about making the right trade-offs. With so many options out there, this can get really challenging. <strong>15 minutes on the phone with one of our experts is all it takes to figure out the ideal device for you!</strong> We will recommend the best device for you based on your personal usage and preferences. Best of all, it's <strong>completely free.</strong></p>-->
-					<!--                <p>If you prefers to see and hold the device, we will bring up to 5 devices to you for you to try, and show you all the features for a flat $99 per visit (TVs excluded).</p>-->
-					<p><a href="ourservices.html#advice" class="blueLink">Learn More &raquo;</a></p>
-				</div>
-			</a>
+            <a class="homepageBoxes" href="ourservices.html#advice">
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <span class="glyphicon glyphicon-thumbs-up fa-3x"></span>
+                    <h3 class="box-header">Personalized Recommendation</h3>
+                    <p>We all use tech differently. In minutes, our experts will help you find theright tech for your unique needs. Best of all, your first consultation is <strong>completely free!</strong></p>
+                    <p><a href="ourservices.html#advice" class="blueLink">Learn More &raquo;</a></p>
+                </div>
+            </a>
 
-			<a class="homepageBoxes" href="ourservices.html#setup">
-				<div class="col-xs-12 col-sm-6 col-md-3 text-center">
-					<span class="glyphicon glyphicon-off fa-3x"></span>
-					<h3 class="box-header">Device Setup</h3>
-					<p>We offer same or next day device setup. We make sure that your apps, settings, services are all working seamlessly. Each visit is just $99 (up to 1 hour).</p>
-					<!--                <p>Tech can get complicated- especially if you have many devices and you want them to work together. That's why we set up all your devices for you and make sure all your hardware, software and services work together seamlessly. Each visit is just $99 (up to 1 hour). <strong>Satisfaction guaranteed - if we can't make it work, we don't charge you!</strong></p>-->
-					<p><a href="ourservices.html#setup" class="blueLink">Learn More &raquo;</a></p>
-				</div>
-			</a>
-			<!--        </div>-->
+            <a class="homepageBoxes" href="ourservices.html#setup">
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <span class="glyphicon glyphicon-off fa-3x"></span>
+                    <h3 class="box-header">Device Setup</h3>
+                    <p>We offer same or next day device setup. We make sure that your apps, settings, services are all working seamlessly. Each visit is just $99 (up to 1 hour).</p>
+                    <!--                <p>Tech can get complicated- especially if you have many devices and you want them to work together. That's why we set up all your devices for you and make sure all your hardware, software and services work together seamlessly. Each visit is just $99 (up to 1 hour). <strong>Satisfaction guaranteed - if we can't make it work, we don't charge you!</strong></p>-->
+                    <p><a href="ourservices.html#setup" class="blueLink">Learn More &raquo;</a></p>
+                </div>
+            </a>
 
-			<!--        <div class="row">-->
-			<a class="homepageBoxes" href="ourservices.html#tutorial">
-				<div class="col-xs-12 col-sm-6 col-md-3 text-center">
-					<span class="glyphicon glyphicon-info-sign fa-3x" aria-hidden="true"></span>
-					<h3 class="box-header">Tutorials</h3>
-					<p>Looking to use your devices to their fullest potential? Learn how, at $99 per visit (up to 1 hour).</p>
-					<p><a href="ourservices.html#tutorial" class="blueLink">Learn More &raquo;</a></p>
-				</div>
-			</a>
+            <div class="clearfix visible-sm-block"></div>
 
-			<a class="homepageBoxes" href="ourservices.html#troubleshooting">
-				<div class="col-xs-12 col-sm-6 col-md-3 text-center">
-					<span class="glyphicon glyphicon-wrench fa-3x" aria-hidden="true"></span>
-					<h3 class="box-header">Troubleshooting</h3>
-					<p>TechFriend offers in-person software troubleshooting at $99 per visit (up to 1 hour). Unfortunately, we can't fix hardware issues (like cracked screens).</p>
-					<p><a href="ourservices.html#troubleshooting" class="blueLink">Learn More &raquo;</a></p>
-				</div>
-			</a>
-		</div>
+            <a class="homepageBoxes" href="ourservices.html#tutorial">
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <span class="glyphicon glyphicon-info-sign fa-3x" aria-hidden="true"></span>
+                    <h3 class="box-header">Tutorials</h3>
+                    <p>Looking to use your devices to their fullest potential? Learn how, at $99 per visit (up to 1 hour).</p>
+                    <p><a href="ourservices.html#tutorial" class="blueLink">Learn More &raquo;</a></p>
+                </div>
+            </a>
 
-		<hr>
-		<div class="row">
-			<div class="col-xs-12">
-				<h2 class="text-center section-header headerText">Our Mission</h2>
-			</div>
-			<div class="col-xs-12">
-				<p>We started TechFriend because our family and friends often asked us to help them pick out and set up phones, computers, WiFi and TVs. Making them happy made us happy, and we realized we wanted to share this experience with the world! We are committed
-					to delivering a worry-free, personal technology solution like nothing you've ever experienced before.</p>
-				<p><a href="aboutus.html" class="blueLink">Learn More About Us &raquo;</a></p>
-			</div>
-		</div>
-	</section>
+            <a class="homepageBoxes" href="ourservices.html#troubleshooting">
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <span class="glyphicon glyphicon-wrench fa-3x" aria-hidden="true"></span>
+                    <h3 class="box-header">Troubleshooting</h3>
+                    <p>TechFriend offers in-person software troubleshooting at $99 per visit (up to 1 hour). Unfortunately, we can't fix hardware issues (like cracked screens).</p>
+                    <p><a href="ourservices.html#troubleshooting" class="blueLink">Learn More &raquo;</a></p>
+                </div>
+            </a>
+        </div>
 
-	<footer>
-		<div class="container-fluid">
-			<div class="row row-footer">
+        <hr>
+    </section>
+    <section id="our-mission">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center section-header">Our Mission</h2>
+            </div>
+            <div id="our-mission-image" class="col-xs-12 col-sm-4 col-sm-offset-2">
 
-				<div class="col-xs-12 col-sm-4 text-center">
-					<h5>Contact Us</h5>
-					<address>
-                        <i class="fa fa-phone"></i><a href="tel: +16468832413">(646) 883-2413</a><br>
-                        <i class="fa fa-envelope"></i> <a href="mailto: contact@techfriend.us">contact@techfriend.us</a>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <p>We started TechFriend because our family and friends often asked us to help them pick out and set up phones, computers, WiFi and TVs. Making them happy made us happy, and we realized we wanted to share this experience with the world! We are committed to delivering a worry-free, personal technology solution like nothing you've ever experienced before.</p>
+                <p><a href="aboutus.html" class="blueLink">Learn More About Us &raquo;</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-customers-love-us" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center section-header">Our Customers Love Us!</h2>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <p>I love TechFriend! They are so awesome. They helped me buy an awesome speaker system for my television.</p>
+                    <p class="reviewer">-Kristen S.</p>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <p>I love TechFriend! They are so awesome. They helped me buy an awesome speaker system for my television.</p>
+                    <p class="reviewer">-Kristen S.</p>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <p>I love TechFriend! They are so awesome. They helped me buy an awesome speaker system for my television.</p>
+                    <p class="reviewer">-Kristen S.</p>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <p>I love TechFriend! They are so awesome. They helped me buy an awesome speaker system for my television.</p>
+                    <p class="reviewer">-Kristen S.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+    <a tabindex="0" class="btn btn-lg btn-danger bs-docs-popover" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Dismissible popover">Dismissible popover</a>
+    <section id="we-know-all-types-of-tech" class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center section-header">We Know All Types of Tech</h2>
+                
+            </div>
+            
+            <div class="col-xs-12 col-sm-4 text-center">
+                <a class="blueLink" role="button" data-toggle="collapse" href="#phonesAndTablets" aria-expanded="false" aria-controls="internet">
+                    <i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
+                    <i class="fa fa-tablet fa-5x" aria-hidden="true"></i>
+                    <br>Phones and Tablets
+                </a>
+               
+                <div class="collapse" id="phonesAndTablets">
+                    <div class="well">
+                        <p>
+                            We hand-deliver and set up smartphones and tablets within 24 hours, at time of your choosing. We offer free advice about what to purchase. We back up your photos and other files to ensure nothing is lost. We transfer your contacts to the new phone. You name it, we take care of it. Our flat fee of $99 per hour covers the time we spend in-person helping you. You pay exactly what we pay for the devices we deliver.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 text-center">
+                <a class="blueLink" role="button" data-toggle="collapse" href="#laptopsAndDesktops" aria-expanded="false" aria-controls="internet">
+                    <i class="fa fa-laptop fa-5x" aria-hidden="true"></i>
+                    <i class="fa fa-desktop fa-5x" aria-hidden="true"></i>
+                    <br>Laptops and Desktops
+                </a>
+                <div class="collapse" id="laptopsAndDesktops">
+                    <div class="well">
+                        <p>
+                            We hand-deliver and set up laptops and desktops within 24 hours, at time of your choosing. We offer free advice about what to purchase. We back up your photos and other files to ensure nothing is lost. We connect screens and accesories. We connect your device to the Internet. We sync it with your other devices. You name it, we take care of it. Our flat fee of $99 per hour covers the time we spend in-person helping you. You pay exactly what we pay for the devices we deliver. If you’re not satisfied, we won’t charge you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 text-center">
+                <a class="blueLink" role="button" data-toggle="collapse" href="#tvs" aria-expanded="false" aria-controls="internet">
+                    <i class="fa fa-television fa-5x" aria-hidden="true"></i>
+
+                    <br>TVs & Set-Top Boxes
+                </a>
+                <div class="collapse" id="tvs">
+                    <div class="well">
+                        <p>
+                            We hand-deliver and set up TVs, Smart TVs and set-top boxes within 24 hours, at time of your choosing. We offer free advice about what to purchase. We connect your cable and set top boxes. We set up your remote and apps. You name it, we take care of it. Our flat fee of $99 per hour covers the time we spend in-person helping you. You pay exactly what we pay for the devices we deliver. If you’re not satisfied, we won’t charge you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center">
+                <a class="blueLink" role="button" data-toggle="collapse" href="#wifi" aria-expanded="false" aria-controls="internet">
+                    <i class="fa fa-wifi fa-5x" aria-hidden="true"></i>
+                    <br>WiFi & Networking
+                </a>
+                <div class="collapse" id="wifi">
+                    <div class="well">
+                        <p>
+                            We hand-deliver and set up WiFi devices within 24 hours, at time of your choosing. We offer free advice about what router to purchase. We make sure your entire home has strong WiFi coverage. We set up your network security and connect all your devices to WiFi. You name it, we take care of it. Our flat fee of $99 per hour covers the time we spend in-person helping you. You pay exactly what we pay for the devices we deliver. If you’re not satisfied, we won’t charge you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 text-center">
+                <a class="blueLink" role="button" data-toggle="collapse" href="#printers" aria-expanded="false" aria-controls="internet">
+                    <i class="fa fa-print fa-5x" aria-hidden="true"></i>
+                    <br>Printers
+                </a>
+                <div class="collapse" id="printers">
+                    <div class="well">
+                        <p>
+                            We hand-deliver and set up printers within 24 hours, at time of your choosing. We offer free advice about what printer to purchase. We connect the new printer to your computer and other devices. You name it, we take care of it. Our flat fee of $99 per hour covers the time we spend in-person helping you. You pay exactly what we pay for the devices we deliver. If you’re not satisfied, we won’t charge you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 text-center">
+                <a class="blueLink" role="button" data-toggle="collapse" href="#printers" aria-expanded="false" aria-controls="internet">
+                    <i class="fa fa-plus fa-5x" aria-hidden="true"></i>
+                    <br>And More
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="let-us-help-you-today" class="container-fluid">
+        <div class="container">
+            <div class="row center">
+                <!--				<div class="col-xs-12">-->
+                <h1 class="text-center headerText" id="jumbotron-text-xs">Let Us Help You Today</h1>
+                <h4 class="text-center">Contact us for a FREE half-hour consultation about any tech-related questions you have.</h4>
+                <!--				</div>-->
+            </div>
+
+
+
+        </div>
+
+        <div class="dropdown text-center">
+            <button id="callToAction" type="button" class="btn btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started <span id="caretGlyphicon" class="glyphicon glyphicon-chevron-down"></span></button>
+            <ul id="dropdownCenter" class="dropdown-menu">
+                <!-- BEGIN OLARK CHAT LINK -->
+                <li><a class="text-center" id="callToActionDropdown" href="javascript:void(0);" onclick="olark('api.box.expand')">
+                                Live Chat
+                            </a></li>
+                <!-- END OLARK CHAT LINK -->
+                <li><a class="text-center" id="callToActionDropdown" href="tel: +16468832413">Call</a></li>
+                <li><a class="text-center" id="callToActionDropdown" href="mailto: contact@techfriend.us">Email</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row row-footer">
+
+                <div class="col-xs-12 col-sm-4 text-center">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <i class="fa fa-phone"></i><a href="tel: +16468832413"> (646) 883-2413</a><br>
+                        <i class="fa fa-envelope"></i> <a href="mailto: contact@techfriend.us"> contact@techfriend.us</a>
 		           </address>
-				</div>
-				<div class="col-xs-12 col-sm-4 text-center">
-					<p>Please Support Us On Social Media!</p>
-					<a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/TechFriendUs"><i class="fa fa-facebook"></i></a>
-					<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/TechFriendUs"><i class="fa fa-twitter"></i></a>
-					<!--                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>-->
-				</div>
-				<div class="col-xs-12 col-sm-4 text-center">
-					<h5>Links</h5>
-					<ul class="list-unstyled">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="aboutus.html">About Us</a></li>
-						<li><a href="ourservices.html">Our Services</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 text-center">
-					<p>© Copyright 2016 TechFriend.us Inc.</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+                </div>
+                <div class="col-xs-12 col-sm-4 text-center">
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
+                    <!--					<h4>Please Support Us On Social Media</h4>-->
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/TechFriendUs"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/TechFriendUs"><i class="fa fa-twitter"></i></a>
+                    <!--                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>-->
+                </div>
+                <div class="col-xs-12 col-sm-4 text-center">
+                    <h4>Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="ourservices.html">Our Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <img src="images/tf-logo.png">
+                    <p>© Copyright 2016 TechFriend.us Inc.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

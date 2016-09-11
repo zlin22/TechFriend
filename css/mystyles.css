@@ -2,11 +2,6 @@ a.blueLink {
   color: #00ccff;
 }
 
-.headerText {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-}
-
 .navbar-default {
   background: #8f42dc;
   font-family: "Cabin", sans-serif;
@@ -76,7 +71,7 @@ a.blueLink {
   max-width: 200px;
   margin: auto;
   position: relative;
-  top: -13px;
+  top: -10px;
 }
 
 .jumbotron {
@@ -86,7 +81,7 @@ a.blueLink {
   margin-bottom: 0;
 }
 .jumbotron #jumbotron-image-container {
-  height: 400px;
+  height: 600px;
   background-image: url(../images/jumbotron-sm7.jpg);
   background-position: center;
 }
@@ -118,7 +113,7 @@ a.blueLink {
   background-color: #8f42dc;
   color: white;
   text-transform: uppercase;
-  border: 1px solid white;
+  border: 3px solid white;
 }
 #callToActionNav:hover,
 #callToActionNav .active {
@@ -135,6 +130,11 @@ a.blueLink {
 #callToAction .active {
   background-color: #8f42dc;
   color: white;
+}
+
+#caretGlyphicon {
+  color: white;
+  font-size: 0.75em;
 }
 
 #callToActionDropdown {
@@ -158,9 +158,15 @@ header {
 }
 
 .section-header {
-  font-weight: 900;
+  font-weight: 500;
   color: black;
-  font-size: 5em;
+  font-size: 2.5em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.headerText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
 }
 
 .box-header {
@@ -192,6 +198,52 @@ hr {
   background-color: lightgrey;
   /* Modern Browsers */
   width: 100%;
+}
+
+#dropdownCenter {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
+  background-color: #8f42dc;
+}
+
+#what-we-do {
+  padding-top: 30px;
+}
+
+#our-mission {
+  padding: 30px 0;
+}
+
+#our-customers-love-us {
+  background-color: #4cc9a4;
+  color: white;
+  padding: 30px 0;
+}
+#our-customers-love-us h1,
+#our-customers-love-us h2 {
+  color: white;
+}
+#our-customers-love-us .reviewer {
+  font-style: italic;
+}
+
+#we-know-all-types-of-tech {
+  padding: 30px 0;
+}
+
+#let-us-help-you-today {
+  background-color: #00ccff;
+  color: white;
+  padding: 30px 0;
+}
+#let-us-help-you-today h1,
+#let-us-help-you-today h2 {
+  color: white;
+}
+#let-us-help-you-today .reviewer {
+  font-style: italic;
 }
 
 address {
@@ -243,6 +295,9 @@ footer .row-footer address a {
 }
 footer .row-footer li a {
   color: black;
+}
+footer img {
+  max-width: 50px;
 }
 
 address {
