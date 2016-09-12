@@ -120,6 +120,9 @@ a.blueLink {
         //		height: 300px;
         color: white;
         vertical-align: middle;
+        a {
+            color: white;
+        }
     }
     //	.container-fluid {}
     ul {
@@ -131,9 +134,35 @@ a.blueLink {
     }
 }
 
+#jumbotron-about-us {
+    padding: 0;
+    //    background-color: $friend;
+    position: relative;
+    border: none;
+    margin-bottom: 0;
+    //@media (min-width: 768px) {
+
+        height: 300px;
+        background: /* top, transparent black, faked with gradient */
+        rgb(0, 0, 0), url(../images/jumbotron-sm7.jpg);
+        background: /* top, transparent black, faked with gradient */
+        linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/jumbotron-sm7.jpg);
+        background-position: center;
+        //        background-repeat: no-repeat;
+//    }
+}
+
 #jumbotron-text {
     text-align: center;
     padding-top: 200px;
+    color: white;
+    font-weight: 700;
+//    font-size: 5em;
+}
+
+#jumbotron-about-us-text {
+    text-align: center;
+    padding-top: 100px;
     color: white;
     font-weight: 700;
 //    font-size: 5em;
@@ -307,6 +336,12 @@ body {
 .row-learn-more p {
     margin-top: -15px;
     padding: 0;
+}
+
+#our-team {
+    img {
+        max-height: 200px;
+    }
 }
 
 footer {

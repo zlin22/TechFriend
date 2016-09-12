@@ -95,6 +95,9 @@ a.blueLink {
   color: white;
   vertical-align: middle;
 }
+.jumbotron #jumbotron-text-container a {
+  color: white;
+}
 .jumbotron ul {
   position: relative;
   margin: auto;
@@ -103,9 +106,27 @@ a.blueLink {
   background-color: #8f42dc;
 }
 
+#jumbotron-about-us {
+  padding: 0;
+  position: relative;
+  border: none;
+  margin-bottom: 0;
+  height: 300px;
+  background: black, url(../images/jumbotron-sm7.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/jumbotron-sm7.jpg);
+  background-position: center;
+}
+
 #jumbotron-text {
   text-align: center;
   padding-top: 200px;
+  color: white;
+  font-weight: 700;
+}
+
+#jumbotron-about-us-text {
+  text-align: center;
+  padding-top: 100px;
   color: white;
   font-weight: 700;
 }
@@ -277,6 +298,10 @@ body {
 .row-learn-more p {
   margin-top: -15px;
   padding: 0;
+}
+
+#our-team img {
+  max-height: 200px;
 }
 
 footer {
