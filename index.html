@@ -193,13 +193,10 @@
         <div id="jumbotron-image-container" class="container-fluid">
             <!--            <img src="images/jumbotronDevices.png" alt="ctrl-lego" class="img-responsive visible-xs-block">-->
             <!--            <img src="images/jumbotron-sm.jpg" alt="ctrl-lego" class="img-responsive hidden-xs">-->
-        </div>
-
-        <div id="jumbotron-text-container" class="container-fluid">
-            <div class="row center">
+            <div id="jumbotron-text" class="row center">
                 <!--				<div class="col-xs-12">-->
-                <h1 class="text-center headerText" id="jumbotron-text-xs">Let us be your (tech) guide.</h1>
-                <h4 class="text-center">We're your friendly tech consultants. We offer advice, setup, and education for your personal technology needs.</h4>
+                <h1 class="text-center"><strong>Let us be your (tech) guide.</strong></h1>
+                <h4 class="text-center"><strong>We're your friendly tech consultants. We offer advice, setup, and education for your personal technology needs.</strong></h4>
                 <!--				</div>-->
             </div>
             <div class="row text-center">
@@ -219,6 +216,13 @@
             </div>
 
         </div>
+
+        <!--
+        <div id="jumbotron-text-container" class="container-fluid">
+            
+
+        </div>
+-->
     </header>
 
     <section id="what-we-do" class="container">
@@ -271,6 +275,7 @@
 
         <hr>
     </section>
+
     <section id="our-mission">
         <div class="row">
             <div class="col-xs-12">
@@ -311,23 +316,26 @@
             </div>
         </div>
     </section>
- 
-<!--    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>-->
+
+    <!--    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>-->
 
     <section id="we-know-all-types-of-tech" class="container">
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-center section-header">We Know All Types of Tech</h2>
-                
+                <h4 class="text-center">You name it, we take care of it. Our flat fee of $99 per hour covers the time we spend in-person helping you.
+                <br>If you’re not satisfied, we won’t charge you.</h4>
             </div>
-            
+
             <div class="col-xs-12 col-sm-4 text-center">
-                <a class="blueLink" role="button" data-toggle="collapse" href="#phonesAndTablets" aria-expanded="false" aria-controls="internet">
+                <a tabindex="0" data-placement="left" class="btn btn-lg bs-docs-popover blueLink" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Dismissible popover">
+                    <!--                <a class="blueLink" role="button" data-toggle="collapse" href="#phonesAndTablets" aria-expanded="false" aria-controls="internet">-->
                     <i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
                     <i class="fa fa-tablet fa-5x" aria-hidden="true"></i>
                     <br>Phones and Tablets
+                    <!--                </a>-->
                 </a>
-               
+
                 <div class="collapse" id="phonesAndTablets">
                     <div class="well">
                         <p>
@@ -402,36 +410,70 @@
             </div>
 
         </div>
+        <hr>
     </section>
 
-    <section id="let-us-help-you-today" class="container-fluid">
-        <div class="container">
-            <div class="row center">
-                <!--				<div class="col-xs-12">-->
-                <h1 class="text-center headerText" id="jumbotron-text-xs">Let Us Help You Today</h1>
-                <h4 class="text-center">Contact us for a FREE half-hour consultation about any tech-related questions you have.</h4>
-                <!--				</div>-->
+    <section id="our-pricing" class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center section-header">Our Affordable Pricing</h2>
             </div>
-
-
-
-        </div>
-
-        <div class="dropdown text-center">
-            <button id="callToAction" type="button" class="btn btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started <span id="caretGlyphicon" class="glyphicon glyphicon-chevron-down"></span></button>
-            <ul id="dropdownCenter" class="dropdown-menu">
-                <!-- BEGIN OLARK CHAT LINK -->
-                <li><a class="text-center" id="callToActionDropdown" href="javascript:void(0);" onclick="olark('api.box.expand')">
-                                Live Chat
-                            </a></li>
-                <!-- END OLARK CHAT LINK -->
-                <li><a class="text-center" id="callToActionDropdown" href="tel: +16468832413">Call</a></li>
-                <li><a class="text-center" id="callToActionDropdown" href="mailto: contact@techfriend.us">Email</a></li>
-            </ul>
+            <div class="col-xs-12">
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Remote Services</th>
+                            <th class="text-center">In-Person Visits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-xs-6">Device Recommendations</td>
+                            <td>Device Setup</td>
+                        </tr>
+                        <tr>
+                            <td>Cell Phone Carrier Recommendations</td>
+                            <td>Tutorials</td>
+                        </tr>
+                        <tr>
+                            <td>General Tech Questions</td>
+                            <td>Troubleshooting</td>
+                        </tr>
+                        <tr class="active info">
+                            <td>$29 per half-hour session</td>
+                            <td>$99 per hourly visit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
+
 
     <footer>
+        <section id="let-us-help-you-today" class="container-fluid">
+            <div class="container">
+                <div class="row center">
+                    <!--				<div class="col-xs-12">-->
+                    <h1 class="text-center headerText" id="jumbotron-text-xs">Let Us Help You Today</h1>
+                    <h4 class="text-center">Contact us for a FREE half-hour consultation about any tech-related questions you have.</h4>
+                    <!--				</div>-->
+                </div>
+                <div class="dropdown text-center">
+                    <button id="callToAction" type="button" class="btn btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started <span id="caretGlyphicon" class="glyphicon glyphicon-chevron-down"></span></button>
+                    <ul id="dropdownCenter" class="dropdown-menu">
+                        <!-- BEGIN OLARK CHAT LINK -->
+                        <li><a class="text-center" id="callToActionDropdown" href="javascript:void(0);" onclick="olark('api.box.expand')">
+                                Live Chat
+                            </a></li>
+                        <!-- END OLARK CHAT LINK -->
+                        <li><a class="text-center" id="callToActionDropdown" href="tel: +16468832413">Call</a></li>
+                        <li><a class="text-center" id="callToActionDropdown" href="mailto: contact@techfriend.us">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <div class="container">
             <div class="row row-footer">
 
@@ -469,6 +511,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        })
+
+    </script>
 
 </body>
 

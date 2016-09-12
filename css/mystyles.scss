@@ -103,7 +103,10 @@ a.blueLink {
     //@media (min-width: 768px) {
     #jumbotron-image-container {
         height: 600px;
-        background-image: url(../images/jumbotron-sm7.jpg);
+        background: /* top, transparent black, faked with gradient */
+        rgb(0, 0, 0), url(../images/jumbotron-sm7.jpg);
+        background: /* top, transparent black, faked with gradient */
+        linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/jumbotron-sm7.jpg);
         background-position: center;
         //        background-repeat: no-repeat;
     }
@@ -130,9 +133,10 @@ a.blueLink {
 
 #jumbotron-text {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 350px;
     color: white;
-    font-size: 5em;
+    font-weight: 700;
+//    font-size: 5em;
 }
 
 #callToActionNav {

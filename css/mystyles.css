@@ -82,7 +82,8 @@ a.blueLink {
 }
 .jumbotron #jumbotron-image-container {
   height: 600px;
-  background-image: url(../images/jumbotron-sm7.jpg);
+  background: black, url(../images/jumbotron-sm7.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/jumbotron-sm7.jpg);
   background-position: center;
 }
 .jumbotron #jumbotron-text-container {
@@ -104,9 +105,9 @@ a.blueLink {
 
 #jumbotron-text {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 350px;
   color: white;
-  font-size: 5em;
+  font-weight: 700;
 }
 
 #callToActionNav {
